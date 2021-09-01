@@ -1,0 +1,43 @@
+.column {
+    width: 100%;
+  }
+  
+  @media (min-width: 600px) {
+    .column {
+      width: 50%;
+    }
+  }
+
+  body {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0;}
+
+  
+  main {
+    background: #d9d7d5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  div {
+    background: #767775;
+    flex-basis: 100%;
+    height: 100px;
+    margin-bottom: 0.5rem;
+  }
+
+  @media (min-width: 600px) {
+    main {
+      flex-wrap: nowrap;
+    }
+
+    div {
+      flex-basis: 33%;
+    }
+
+    img {
+        max-width: 100%;
+      }
+      p {
+        font-size: 2vmin;
+      }
+  }
